@@ -132,7 +132,7 @@ strong{
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(57, 55, 55, 1);
     transition: transform 0.3s ease-in-out;
-    height: 440px;
+    height: 400px;
 }
 
 /* Image hover effect */
@@ -160,7 +160,7 @@ strong{
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(57, 55, 55, 1);
     transition: transform 0.3s ease-in-out;
-    height: 325px;
+    height: 300px;
 }
 
 .gif-container p{
@@ -227,7 +227,7 @@ strong{
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  width: 840px;
+  width: 720px;
 }
 
 
@@ -255,7 +255,7 @@ strong{
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(57, 55, 55, 1);
   transition: transform 0.3s ease-in-out;
-  height: 80px;
+  height: 50px;
 }
 
 .small-img img:hover {
@@ -277,7 +277,7 @@ strong{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(57, 55, 55, 1);
   transition: transform 0.3s ease-in-out;
-  height: 350px;
+  height: 330px;
 }
 
 .medium-img img:hover {
