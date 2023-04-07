@@ -1,0 +1,341 @@
+/* Body styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+  
+/* Header styles */
+header {
+font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: black;
+font-weight: bolder;
+padding: 20px;
+text-align: center;
+}
+
+/* H1 styles */
+h1 {
+margin: 0;
+font-size: 48px;
+}
+
+/* Section styles */
+section {
+max-width: 1150px;
+margin: 0 auto;
+padding-top: 20px;
+padding-bottom: 30px;
+padding-left: 40px;
+padding-right: 40px;
+border-right: 1px solid lightgray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: red;
+  border-radius: 7px;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+blockquote {
+margin-left: 0;
+padding-left: 1em;
+border-left: 3px solid black;
+}
+
+/* H2 styles */
+h2 {
+font-size: 36px;
+margin-top: 0;
+color: #995733;
+font-weight: lighter;
+}
+
+/* Paragraph styles */
+p {
+line-height: 1.5;
+margin-bottom: 20px;
+font-size: larger;
+}
+
+strong{
+  font-size: larger;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1150px) {
+  body {
+    max-width: 100%;
+    padding: 2vw;
+    margin: 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  align-items: flex-end; /* Add this to align the image and text at the bottom */
+  position: relative; /* Add this to make the container a reference for absolute positioned elements */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(57, 55, 55, 1);
+    transition: transform 0.3s ease-in-out;
+    height: 475px;
+}
+
+/* Image hover effect */
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Image container styles */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  align-items: flex-end; /* Add this to align the image and text at the bottom */
+  position: relative; /* Add this to make the container a reference for absolute positioned elements */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+.gif-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(57, 55, 55, 1);
+    transition: transform 0.3s ease-in-out;
+    height: 325px;
+}
+
+.gif-container p{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/* map container styles */
+.map-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  align-items: flex-end; /* Add this to align the image and text at the bottom */
+  position: relative; /* Add this to make the container a reference for absolute positioned elements */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* map styles */
+.map-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(57, 55, 55, 1);
+    transition: transform 0.3s ease-in-out;
+    height: 400px;
+}
+
+.map-container blockquote {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1em;
+  margin-left: 0;
+  border-left: 3px solid black;
+}
+
+/* text container styles */
+.text-container {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-container p{
+  /* text-align: center; */
+  margin-top: 30px;
+}
+
+
+/* Text overlay styles */
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.7);
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 840px;
+}
+
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+/* Optional styling to make the image appear slightly desaturated on hover
+.image-container:hover img {
+  filter: brightness(90%) saturate(70%);
+} */
+
+.small-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.small-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(57, 55, 55, 1);
+  transition: transform 0.3s ease-in-out;
+  height: 80px;
+}
+
+.small-img img:hover {
+  transform: scale(1.1);
+}
+
+.medium-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.medium-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(57, 55, 55, 1);
+  transition: transform 0.3s ease-in-out;
+  height: 350px;
+}
+
+.medium-img img:hover {
+  transform: scale(1.1);
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(57, 55, 55, 1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 350px;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  width: 265px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #376faa;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: larger;
+}
+li p {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}

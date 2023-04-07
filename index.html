@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GameBox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>GameBox : Three Fun Games!</h1>
+    </header>
+
+    <ul>
+      <li><p>Contents</p></li>
+      <hr>
+      <li id="nav-members"><a href="#members">Members</a></li>
+      <li id="nav-intro"><a href="#intro">Introduction</a></li>
+      <li id="nav-objectives"><a href="#objectives">Objectives</a></li>
+      <li id="nav-summary"><a href="#summary">Executive Summary</a></li>
+      <li id="nav-design"><a href="#design">Design</a></li>
+      <li id="nav-principle"><a href="#principle">Design Principles</a></li>
+      <li id="nav-stack"><a href="#stack">Technical Stack</a></li>
+      <li id="nav-heuristic"><a href="#heuristic">Heuristic Evaluation</a></li>
+      <li id="nav-future"><a href="#future">Future Work</a></li>
+      <li id="nav-demo"><a href="#demo">Game Demo</a></li>
+    </ul>
+
+    <section id="members">
+      <h2>Members:</h2>
+      <p><medium>&nbsp;&#x2022;&nbsp; Arpita Sharma (<a href="https://github.com/ArpitaSharma">https://github.com/ArpitaSharma</a>)</medium></p>
+      <p><medium>&nbsp;&#x2022;&nbsp; Nimra Akram (<a href="https://github.com/animra">https://github.com/animra</a>)</medium></p>
+      <p><medium>&nbsp;&#x2022;&nbsp; Utkarsh Akhouri (<a href="https://github.com/uakhouri">https://github.com/uakhouri</a>)</medium></p>
+      <p><medium>&nbsp;&#x2022;&nbsp; Vibhav Vijay Sinha (<a href="https://github.com/VibhavSinha04">https://github.com/VibhavSinha04</a>)</medium></p>
+      <p><medium>&nbsp;&#x2022;&nbsp; Muhammad Yasin Aziz (<a href="https://github.com/mdyasinaziz">https://github.com/mdyasinaziz</a>)</medium></p>
+    </section>
+
+    <div class="image-container">
+      <img src="./images/gamebox.png" alt="Image">
+      <div class="text-overlay">GameBox</div>
+    </div>
+    
+    <section id="intro">
+        <h2>Introduction:</h2>
+        <p>In recent years, there has been a significant increase in the use of hand gestures as a means of input for various devices. With the advancement of technology, it has become possible to recognize and interpret hand gestures accurately, which has led to the development of new and innovative applications.</p>
+        <p>In this project, we have developed an all-in-one application that utilizes hand gestures as a means of input instead of traditional keyboard inputs. The application consists of three different games that can be played using hand gestures, providing users with a unique and engaging gaming experience.</p>
+        <p>This project aims to explore the potential of hand gesture recognition as a means of input for gaming applications. We believe that this project will contribute to the development of new and innovative gaming applications, providing users with an immersive and interactive experience.</p>
+        <p>In the following sections, we will describe the Existing Systems and Goals of Redesign, Technical details of the project, Executive Summary, A Navigational map of the system, HCI Design Principles Applied, Heuristics and the design and implementation of the application, the hand gesture recognition system, and provide recommendations for future work.</p>
+        <hr>
+      </section>
+
+    <section id="objectives">
+        <h2>Objectives of Redesign:</h2>
+        <p><medium>&nbsp;&#x2022;&nbsp; Make games more accessible by implementing hand gestures in all three games.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Make the games self-explanatory. </medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Make the tool more interactive. </medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Enhance the features such that it mediates and enables complex cognitive activities. </medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Enhance User control. </medium></p>
+        <hr>
+    </section>
+
+    <section id="summary">
+        <h2>Executive Summary:</h2>
+        <p>Existing Systems and Goals of Redesign:</p>
+        <p>The project’s goal is to develop a standalone desktop application that will feature some of the popular classic games like Flappy Bird, Super Mario & Chrome Dino. The objective is to make the games more engaging and stylish for people of all ages by enhancing their interactivity with the games themselves and user-friendliness. In addition, hand gestures will be integrated into the games so that players can use their hands through the webcam to play the games, overall making a more immersive gaming experience.</p>
+    
+        <blockquote>
+          <p><em><strong>Super Mario</strong> is a popular video game series created and published by Nintendo. The first game in the Super Mario series, Super Mario Bros was launched in 1985, and it has since become one of the most well-known video game franchises worldwide. This game had poor accessibility. The game was notoriously difficult, which could lead to frustration and discouragement among players and keyboard based. The game has a simplistic graphic style, but the graphics were inconsistent in quality. Apart from that the game can make it difficult for some players, especially those with disabilities.</em></p>
+        </blockquote>   
+
+        <div class="image-container">
+          <figure>
+            <img src="./images/old_mario.png" alt="Image">
+            <div class="text-overlay">Original Mario Game</div>
+          </figure>
+        </div>
+
+        <p>To address these issues, a proposal has been made to add a hand gesture feature to increase the game’s interactivity. By waving their hands, players will be able to control Mario’s movements, including making him jump or pointing him in a particular direction. Additionally, to ensure that players don’t have any trouble navigating the game, a tutorial or instructions will be included. Furthermore, to keep players engaged, different levels, themes, and settings will be also included.</p>
+        
+        <div class="small-img">
+          <figure>
+            <img src="./images/mario_gest.png" alt="Image">
+            <figcaption>For Super Mario, these Hand Gestures will be required</figcaption>
+          </figure>
+        </div>
+
+        <div class="image-container">
+          <figure>
+            <img src="./gifs/mario_start.gif" alt="gif">
+            <figcaption>Playing Super Mario Game Using Hand Gestures (Jumping Gesture)</figcaption>
+          </figure>
+        </div>
+        
+        <blockquote>
+          <p>
+            <em>
+              <strong>Flappy Bird</strong> is a mobile game that was created by Dong Nguyen in May 2013. The game was known for its simplicity and difficulty, where players controlled a small bird by tapping the screen to make it fly upwards and dodge obstacles while avoiding gravity pulling it down. The game aimed to accumulate as many points as possible by successfully navigating through as many obstacles as possible without colliding with them. The game had poor accessibility. The existing game didn’t offer different difficulty levels to accommodate players with different skill levels. The previous version of flappy bird lacks consistent graphics.
+            </em>
+          </p>
+        </blockquote>
+
+        <div class="image-container">
+          <figure>
+            <img src="./images/old_flappy.png" alt="Image">
+            <div class="text-overlay">Original Flappy Bird</div>
+          </figure>
+        </div>
+
+        <p>To address this issue, a solution has been proposed to incorporate hand gestures into Flappy Bird, thereby enhancing the game’s interactivity and appeal. The game will be redesigned to offer varying difficulty levels such as easy, medium, and hard, to accommodate players with different skill levels and light and dark modes too.</p>
+        
+        <div class="small-img">
+          <figure>
+            <img src="./images/flappy_gest.png" alt="Image">
+            <figcaption>For Flappy Bird, this Hand Gesture will be required</figcaption>
+          </figure>
+        </div>
+
+        <div class="image-container">
+          <figure>
+            <img src="./gifs/flappy_start.gif" alt="gif">
+            <figcaption>Playing Flappy Bird Game Using Hand Gestures (By Making Beak)</figcaption>
+          </figure>
+        </div>
+
+        <blockquote>
+          <p>
+            <em>
+              <strong>Chrome Dino Game</strong> is a game that was created by Google in 2014 for their internet browser Google Chrome, and it was playable when there was no internet connection. In the game, a dinosaur runs across the screen, avoiding obstacles and jumping over the cacti.In the previous Chrome Dino game, there was a lack of accessibility options for players with disabilities. The existing game didn’t offer different difficulty levels to accommodate players with different skill levels. The player didn’t have an option to change theme by themselves while playing the game.
+            </em>
+          </p>
+        </blockquote>
+
+        <div class="image-container">
+          <figure>
+            <img src="./images/old_dino.png" alt="Image">
+            <div class="text-overlay">Original Chrome Dino</div>
+          </figure>
+        </div>
+
+        <p>Although the game is entertaining and straightforward, it can be enhanced by introducing a hand gesture feature, which would enable players to control the dinosaur’s movements using hand gestures. This would make the game more interactive and immersive. Furthermore, it has a difficulty changing and a theme-changing feature as well.</p>
+
+        <div class="small-img">
+          <figure>
+            <img src="./images/dino_gest.png" alt="Image">
+            <figcaption>For Chrome Dino, these Hand Gestures will be required</figcaption>
+          </figure>
+        </div>
+
+        <div class="image-container">
+          <figure>
+            <img src="./gifs/dino_start.gif" alt="gif">
+            <figcaption>Playing Chrome Dino Game Using Hand Gestures (Running & Jumping Gesture)</figcaption>
+          </figure>
+        </div>
+
+        <p>To sum up, the proposed project intends to create a more inclusive and engaging gaming experience for players of all ages and skill levels by addressing the design flaws of classic games and incorporating new features such as hand gestures and replay value.</p>
+        <hr>
+      </section>
+
+    <section id="design">
+      <h2>Design:</h2>
+      <p>This section demonstrates all of the occurring steps of our application. Our application architecture, for now, is a standalone offline app for Windows and Ubuntu. Therefore, demonstrating some of the key artifacts like the hand gesture input wasn’t possible in an online article. Here are the mappings of our application in a set of figures format:</p>
+      
+      <div class="container">
+        <div class="map-container">
+          <img src="./maps/mario/mario1.png" alt="Image" id="mario">
+        </div>
+        <div id="button-container1">
+          <button id="newGameButton" onclick="changeImageAndButtons('new1')">New Game</button>
+          <button id="helpButton" onclick="changeImageAndButtons('help1')">Help</button>
+        </div>
+        <blockquote>
+          <div id="text-container1" class="text-container">
+            <p>This will be the landing page for the user if they select the "Play" button under the Super Mario Logo on the GameBox Screen.<br>The user will see three buttons on the Screen "New Game", "Help" and "Exit".<br>On selecting the "Exit" the user will be redirected to the GameBox Screen.</p>
+          </div>
+        </blockquote>
+        <div class="gif-container">
+          <figure>
+            <img src="./gifs/mariodeathgif.gif" alt="gif">
+            <p>If the Mario dies in game the user will be redirected to the Overworld screen</p>
+          </figure>
+        </div>
+      </div>  
+      
+      <div class="container">
+        <div class="map-container">
+          <img src="./maps/flappy/flappy1.png" alt="Image" id="flappy">
+        </div>
+        <div id="button-container2">
+          <button id="newGameButton" onclick="changeImageAndButtons('new2')">New Game</button>
+          <button id="helpButton" onclick="changeImageAndButtons('help2')">Help</button>
+        </div>
+        <blockquote>
+          <div id="text-container2" class="text-container">
+            <p>This will be the landing page for the user if they select the "Play" button under the Flappy Bird Logo on the GameBox Screen.<br>The user will see three buttons on the Screen "New Game", "Help" and "Exit".<br>On selecting the "Exit" the user will be redirected to the GameBox Screen.</p>
+          </div>
+        </blockquote>
+        <div class="gif-container">
+          <figure>
+            <img src="./gifs/flapyydeathgif.gif" alt="gif">
+            <p>If the Flappy Bird dies during the game the user will be asked if they want to play again or exit the game.<br>If the user selects Play again then the difficulty will be asked again and the above steps will be repeated. </p>
+          </figure>
+        </div>
+      </div> 
+
+      <div class="container">
+        <div class="map-container">
+          <img src="./maps/dino/dino1.png" alt="Image" id="dino">
+        </div>
+        <div id="button-container3">
+          <button id="newGameButton" onclick="changeImageAndButtons('new3')">New Game</button>
+          <button id="helpButton" onclick="changeImageAndButtons('help3')">Help</button>
+        </div>
+        <blockquote>
+          <div id="text-container3" class="text-container">
+            <p>This will be the landing page for the user if they select the "Play" button under the Chrome Dino Logo on the GameBox Screen.<br>The user will see three buttons on the Screen "New Game", "Help" and "Exit".<br>On selecting the "Exit" the user will be redirected to the GameBox Screen.</p>
+          </div>
+        </blockquote>
+        <div class="gif-container">
+          <figure>
+            <img src="./gifs/dinodeathgif.gif" alt="gif">
+            <p>If the Dino dies during the game the user will be shown their score and the high score. After which the user will be taken to the<br>Main Menu of the game and then the steps will be repeated.</p>
+          </figure>
+        </div>
+      </div> 
+
+      <strong>Navigational Maps:</strong>
+      <p>The navigational maps for all three games can be found at the provided links below.</p>
+      <p>Map for Super Mario: <a href="https://imgur.com/a/koj9C6D">https://imgur.com/a/koj9C6D</a></p>
+      <p>Map for Flappy Bird: <a href="https://imgur.com/a/vyHVdNU">https://imgur.com/a/vyHVdNU</a></p>
+      <p>Map for Chrome Dino: <a href="https://imgur.com/a/gGPVWYJ">https://imgur.com/a/gGPVWYJ</a></p>
+      <hr>
+    </section>
+
+    <section id="principle">
+        <h2>Design Principles Applied:</h2>
+        
+          <p><strong>1) Visibility:</strong> We made sure important game elements, such as enemies, gold and silver points, and obstacles, are easy to spot and locate. In our game, we successfully incorporated hand gestures and <strong>provided visual cues</strong> in the form of icons displayed on the top of the game screen. This approach effectively adheres to the principle of visibility, as it allows players to easily identify and select the appropriate gesture without any confusion or difficulty.</p>
+          <p><strong>2) Representation:</strong> Used visual and audio cues to represent different game elements, such as sound effects for enemies, jumps, falls, and coins.</p>
+          <p><strong>3) Feedback:</strong> Gave clear and immediate feedback to the player on their progress and actions in the game.</p>
+          <p><strong>4) Recognition rather than recall:</strong> Used recognition-based tasks, such as showing icons for settings, instead of recall-based tasks to minimize cognitive load.</p>
+        
+        
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle1.png" alt="Image">
+            <!-- <figcaption>For Chrome Dino, these Hand Gestures will be required</figcaption> -->
+          </figure>
+        </div>
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle2.png" alt="Image">
+            <figcaption>Examples of the principles (Visibility, Representation, Feedback, User-Centered Design, and Recognition rather than Recall)</figcaption>
+          </figure>
+        </div>
+        
+        
+          <p><strong>5) User-Centered Design:</strong> Designed the games with the needs and preferences of players in mind, conducted user research, and incorporated feedback into the design process.</p>
+          <p><strong>6) Consistency:</strong> Kept the game design consistent to help players learn and understand how to play. (With the play buttons and help, each icon and button changed the screens in a consistent manner). Added hand gesture points in all three games.</p>
+          <p><strong>7) Affordance:</strong> Made the communication clear on what actions are possible and how to perform them (in the help menu) for the player's ease. Such as how to jump. Affordance means to give clues, the previous designs lacked adequate affordance for buttons like exit, back, and settings. In our artifact, we have incorporated clear buttons such as ‘back’, ‘settings’, and ‘cross’ to enhance affordance and convey information effectively to the user. We have also utilized perceived affordances such as right and left arrows for the help page to create a smoother user experience, with many other examples of affordance incorporated throughout the application.</p>
+          <p><strong>8) Mapping:</strong> Matched the game’s layout to the player’s mental model, such as having levels progress from left to right.</p>
+       
+
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle3.png" alt="Image">
+            <!-- <figcaption>For Chrome Dino, these Hand Gestures will be required</figcaption> -->
+          </figure>
+        </div>
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle4.png" alt="Image">
+            <figcaption>Examples of the principles (Consistency, Affordance, and Mapping)</figcaption>
+          </figure>
+        </div>
+
+        
+          <p><strong>9) Constraints:</strong> Used constraints to limit player actions and prevent errors, such as not taking keyboard inputs to play the games’ will prevent unwanted or mistaken input errors since ours is a hand gesture-based gaming application. The 2-second time delay in the overworld screen for the Mario game prevents the user from choosing the wrong level.</p>
+          <p><strong>10) Fitts’s Law:</strong> Made controls easily accessible and user-friendly, with larger buttons or areas for frequently used actions.</p>
+          <p><strong>11) Hick’s Law:</strong> Minimize the number of choices or actions players need to make at any given time to avoid overload, such as using simple hand gestures to play the games and navigate the game characters instead of pressing the keys on the keyboard whilst looking at the screen as well.</p>
+          <p><strong>12) Replay Value:</strong> Our games Keep the players engaged with new challenges, and levels to increase replay value.</p>
+          <p><strong>13) Progressive Disclosure:</strong> Introduced new gameplay elements gradually to allow players to learn and adapt over time. We included progressive disclosure in our ‘settings’ screen. We made it such that all the information regarding the setting theme, and information about the help of the game are not shown at once. Instead, there are 3 separate options that describe the information when on click. The purpose of this was to lower the chances that users will feel overwhelmed by what they encounter. By disclosing information progressively, we help users manage the complexity associated with the set of instructions.</p>
+          <p><strong>14) Familiarity:</strong> Used familiar and intuitive gameplay mechanics that are easy for players to understand.</p>
+          <p><strong>15) Accessibility: </strong> Increased the game’s accessibility with a hand gesture feature for players with disabilities, making the games playable for a wide range of players. In the existing version, games were only accessible via keyboard, which limited the accessibility of the game for players with disabilities. We have addressed this issue by implementing a hand gesture feature, which allows players to control the game with hand movements instead of keyboard controls. This hand gesture feature increases accessibility and inclusivity for all players, creating a more welcoming and enjoyable gaming experience.</p>
+          <p><strong>16) Cognitive Offloading:</strong> Simplified the game’s interface and reduced unnecessary distractions to minimize cognitive load.</p>
+          <p><strong>17) Metaphors:</strong> Used metaphors to help players understand game mechanics, such as using coins to represent points for extra abilities, adding a back button, and scoring (health bar and coin). Metaphors are commonly used by designers to reduce the complexity of new situations and make the system more familiar to users Our artifact uses metaphors to represent the functionality of buttons and icons, such as the “back” button and “X” icon, beak icon in the flappy bird, settings button and in-game features like coins and health bars in Super Mario game. These metaphors allow users to easily understand the intended actions of the system, providing an intuitive and engaging experience.</p>
+          <p><strong>18) Engagement:</strong> Created an engaging game box application that immerses players in a captivating experience.</p>
+        
+
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle5.png" alt="Image">
+            <!-- <figcaption>For Chrome Dino, these Hand Gestures will be required</figcaption> -->
+          </figure>
+        </div>
+        <div class="medium-img">
+          <figure>
+            <img src="./images/principle6.png" alt="Image">
+            <figcaption>Examples of the principles. (Replay Value, Progressive Disclosure, Familiarity, Accessibility, Cognitive Offloading, Engagement, and Metaphors.)</figcaption>
+          </figure>
+        </div>
+
+       
+          <p><strong>19) Reduce short-term memory load:</strong> Minimized the amount of information players need to remember to progress through the game.</p>
+          <p><strong>20) Aesthetics: </strong> Used a cohesive visual style and atmosphere that enhances the player’s experience and emotional engagement.</p>
+        
+        <hr>
+    </section>
+
+    <section id="stack">
+        <h2>Technical Stack:</h2>
+        <p>Hardware Requirements:</p>
+        <p><medium>&nbsp;&#x2022;&nbsp; A computer with a webcam</medium></p>
+
+        <p>Software Requirements:</p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Operating System: Windows or Linux</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Python 3</small></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; OpenCV library</small></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; TensorFlow library</small></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; PyAudio library (optional, for voice control)</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; NumPy library</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; SciPy library</medium></p>
+
+        <p>Other Requirements:</p>
+        <p><medium>&nbsp;&#x2022;&nbsp; A trained machine learning model for gesture recognition.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Pre-processing code to extract hand features from video frames.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Postprocessing code to interpret gesture classifications and trigger corresponding actions on the computer.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; A user interface for adjusting settings and selecting gesture actions.</medium></p>
+        <hr>
+    </section>
+
+    <section id="heuristic">
+        <h2>Heuristic Evaluation of the System:</h2>
+        <strong>1) Visibility of System Status:</strong>
+        
+        <p>A) How well the state of the system is conveyed to the users:</p>
+        <p>In this artifact, we have used some indicators. For example:</p>
+        <p>Settings symbol: This gives users the option to set the settings of the games to their personal preference.</p>
+        <p>Landing Page: Gives the user clear and understandable buttons to start the game or seek help in the help panel on how to play the game.</p>
+        
+        <p>B) How well the artifact is conveying what is going on when the user makes a Selection:</p>
+        <p>The easily identifiable settings menu pops up when the user clicks on the button, making the artifact user-friendly. Furthermore, on the landing page the play button starts the game, the help button shows how to play the game, settings the Theme changer between the dark mode and light mode also works accordingly. Inevitably, making the users feel confident when their action is recognized. The usage of Acknowledgement pop-ups and starting the games enhance the user experience.</p>
+        <p>Evaluation: The artifact met the criteria of “Visibility of system status” by incorporating the aforementioned factors, which emphasized the importance of maintaining transparent and ongoing communication with the user. This is a crucial element of ensuring system status visibility.</p>
+
+        <strong>2) Match Between System and Real World:</strong>
+        <p>A) How the system managed to speak the user’s language:</p>
+        <p>The buttons such as the help, start, and settings popup panels are designed in a way that effectively conveys important information to the user. Additionally, the names assigned to these buttons are commonly used and easily recognizable, making it simple for the user to comprehend their respective functions upon clicking them.</p>
+        <p>The use of language that is familiar to the user, as opposed to technical or system-specific terminology, increases the flexibility of user interaction with the artifact.</p>
+
+        <p>B) How the artifact followed the real-world conventions:</p>
+        <p>Real-world conventions like the screwdriver representing the settings button in the artifact and the Dark and Light Theme metaphor, which indicates the sun for the lighter theme and the moon for the darker theme also comes into consideration as well.</p>
+        <p>Incorporating real-world conventions into digital experiences creates a stronger alignment between virtual and physical experiences.</p>
+        <p>Evaluation: The artifact adheres to a logical order, which is crucial in ensuring a seamless integration between the system and the real world. Failure to achieve this match could result in negative user perceptions. However, this artifact achieves a well-balanced match between the system and the real world.</p>
+
+        <strong>3) User Control and Freedom:</strong>
+        <p>How user control and freedom are perfectly balanced:</p>
+        <p>If a user clicks on the help or plays button unintentionally, the user can leave the unwanted state by clicking the back button which is clearly marked and positioned on every page. Also, the settings button plays a vital role in enhancing user control and freedom which pauses the game allowing us to change themes and have our configurations give us as much time as we need. Even users can close the settings pop-ups by clicking the “X” button on the right top corner of the pop-up.</p>
+        <p>Evaluation: In the absence of user control and freedom within the artifact, it can result in an unfavorable impact on the artifact since users may find it difficult to revert to their previous state if they mistakenly visit an irrelevant page. Therefore, it is crucial to provide users with an option to exit or return to the previous page, which can be achieved through the proper implementation of a homepage button on every page.</p>
+
+        <strong>4) Consistency and Standards:</strong>
+        <p>How the internal consistency and external consistency are maintained through:</p>
+        <p>Internal consistency is maintained by using the game accent-aligned color background (Yellow for Mario, White for Dino & Green for Flappy Bird) throughout the artifact and the settings popup menu’s background. If not used in the artifact, it could pervert the established meaning of the visual treatment, which could confuse users. Furthermore, external consistency is maintained by using metaphors like the landing home page, and settings symbol.</p>
+        <p>Evaluation: According to Jakob’s law “people spend most of their time on sites other than yours”. If all those other sites follow a consistent convention but your site breaks that convention, then you are forcing people to learn something new which increases the cognitive load every time. In terms of our application, user-friendly metaphors, images, and symbols have properly balanced the cognitive load on users.</p>
+
+        <strong>5) Recognition vs. Recall:</strong>
+        <p>A good idea for recognition and recall might be ‘warning signs’ when enemies are coming while playing the games. Although the standard in-game mechanics of Super Mario, Flappy Bird, and Dino do not show any warning signs in the interface whenever enemies are coming. However, not only in each of the games’ landing main menu pages but in the settings menu while playing the game, we have provided help buttons. The user can click to learn how to play the games. Furthermore, while playing the game the users can easily access the settings menu which has a screwdriver logo. Making the information already seen by users on a daily basis rather than recalling it.</p>
+        <p>Evaluation: Because it has the assistance feature and the flag feature, the artifact has been able to pass the test of recognition vs. recall.</p>
+
+        <strong>6) Error prevention:</strong>
+        <p>Anticipate and prevent errors from occurring by providing clear and concise instructions and feedback.</p>
+        <p>Evaluation: The proposed redesign of the classic games Flappy Bird, Super Mario, and Chrome Dino demonstrates a strong focus on error prevention. By providing clear and concise instructions, tutorials, and feedback, the redesigned games aim to anticipate and prevent errors from occurring during gameplay. Adding varying difficulty levels, light and dark modes, and themes also provides players with more options to customize their gaming experience, reducing the likelihood of frustration or boredom that could lead to errors. The integration of hand gestures as a new control mechanism also shows a focus on error prevention by allowing players to use natural and intuitive movements to control the game, reducing the likelihood of accidental button presses or mis-clicks. Overall, the proposed redesign appears to prioritize error prevention as a key consideration in enhancing the user experience of these classic games.</p>
+        <p>For example, Super Mario requires precision and timing in the controls, so the hand gesture feature should be accurate and responsive. Flappy Bird requires quick reflexes, so the game should be designed in a way that doesn’t slow down or lag, and the hand gesture feature should be responsive enough to keep up with the player’s movements. Chrome Dino is a simple game, but the hand gesture feature should be easy to use and intuitive, so players don’t get frustrated with the new control scheme.</p>
+
+        <strong>7) Flexibility and efficiency of use:</strong>
+        <p>Provide shortcuts and ways to customize the user’s interaction with the artifact to improve efficiency and adapt to their needs.</p>
+        <p>Evaluation: Flexibility and efficiency of use can be incorporated into the proposed project by providing customizable settings and shortcuts for players to interact with the games. This can include the ability to adjust the game’s difficulty level, control settings, and theme. Additionally, players can have the option to choose between hand gestures and traditional keyboard controls, allowing them to adapt to their preferred mode of interaction. Additionally, providing tutorials and clear instructions can also enhance the game’s usability and accessibility.</p>
+
+        <strong>8) Aesthetic and minimalist design:</strong>
+        <p>Strive for a simple and unobtrusive design that supports the user’s task without adding unnecessary complexity.</p>
+        <p>Evaluation: Aesthetic design: The proposal to add a hand gesture feature to control Mario’s, Flappy Bird, and Chrome Dino’s movements are enhancing the game’s aesthetics, as it would be a novel and interactive way to play. The difficulty and theme-changing features are also adding to the visual appeal of the game. However, the designs are kept simple and unobtrusive, so as not to distract from the gameplay. Minimalist design: The tutorial or instructions included in the game is clear and concise, without adding unnecessary complexity. The games are maintaining their simplicity while still accommodating players with different skill levels. The interfaces are clear and uncluttered, and any additional features do not detract from the core gameplay.</p>
+
+        <strong>9) Help users recognize, diagnose, and recover from errors:</strong>
+        <p>Provide meaningful error messages and suggestions for recovery.</p>
+        <p>Evaluation: Clear and concise tutorials or instructions will be included to assist players in navigating the game and controlling characters using hand gestures. The game will have varying difficulty levels, making it accessible to players with different skill levels. Super Mario, Flappy Bird, and Chrome Dino are redesigned to address their design flaws and make them more accessible to a wider range of players. Themes, unlockable, settings, etc will be included to keep players engaged. The game will feature a replay value to encourage players to continue playing and improving their skills. In case of errors, the games will provide clear feedback and help users to identify the issues. The game will also have a user-friendly interface to make it easy for players to access different features and settings.</p>
+
+        <strong>10) Help and documentation:</strong>
+        <p>Provide clear and concise help materials that are easily accessible and understandable for the user.</p>
+        <p>Evaluation: For Super Mario, the help and documentation include a tutorial or instructions on how to use the hand gesture feature to control Mario’s movements, including jumping and pointing in a particular direction. For Flappy Bird, the help and documentation include clear instructions on how to use the hand gesture feature to control the bird’s movements. For Chrome Dino, the help and documentation provide clear guidance on how to use the hand gesture feature to control the dinosaur’s movements, such as jumping and avoiding obstacles. The help materials also provide clear guidance on how to navigate the games, particularly for players who may face difficulties due to disabilities. Additionally, the help materials also include details on how to switch between different themes and difficulty levels. The documentation also offers tips on how to improve one’s performance and achieve higher scores.</p>
+        <hr>
+      </section>
+
+    <section id="future">
+        <h2>Recommendations & Future Work:</h2>
+        <p>To conclude, this was a challenging, eventful, and engaging project. However, like every system, our Classic GameBox Application also has its scope for improvements. Here are some of the aspects that can be improved or implemented:</p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Since our system is an offline standalone desktop application, integrating it with the internet and making it a Web app can have an easy-to-access and comfortable reach to our player base.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Setting up multiplayer options is also considered a very advanced idea that can be implemented in the future and will generate more player engagement.</medium></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Due to copyright issues, we used Mario, Dino & Flappy Bird-like images and assets to build the games. Collaboration with the authors of the games will allow us to directly work on the games and implement the features on those games directly.</small></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; There’s always a scope for adding many more nostalgic classic games to our game box system as well.</small></p>
+        <p><medium>&nbsp;&#x2022;&nbsp; Tweaking, enhancing, and optimizing the machine learning algorithms can also lower the input lag from our hand gestures to play the game as well.</medium></p>
+        <hr>
+      </section>
+
+    <section id="demo">
+      <h2>Game Demo:</h2>
+      <p>The full game demo can be found at the following link: <a href="https://youtu.be/Kpk5TX7Mkjc">https://youtu.be/Kpk5TX7Mkjc</a></p>
+      <hr>
+    </section>
+  </body>
+</html>
