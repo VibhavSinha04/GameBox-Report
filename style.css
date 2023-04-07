@@ -1,7 +1,7 @@
 /* Body styles */
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  max-width: 1150px;
+  max-width: 975px;
   margin: 0 auto;
   padding: 2vw;
   box-sizing: border-box;
@@ -315,7 +315,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 20px;
-  width: 265px;
+  width: 200px;
   background-color: #f1f1f1;
 }
 
